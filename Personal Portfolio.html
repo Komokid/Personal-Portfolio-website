@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Andrew Wang — Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=DM+Mono:wght@300;400;500&family=Outfit:wght@200;300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div id="cur"></div>
+<div id="cur-ring"></div>
+
+<nav id="nav">
+  <a class="nav-logo" href="#" data-go="t-hero">Andrew Wang</a>
+  <ul class="nav-links">
+    <li><a class="on" data-go="t-hero">Home</a></li>
+    <li><a data-go="t-projects">Projects</a></li>
+    <li><a data-go="t-hobbies">Passions</a></li>
+    <li><a data-go="t-contact">Contact</a></li>
+  </ul>
+</nav>
+
+<div class="dots" id="dots">
+  <div class="dot on" data-go="t-hero" data-label="Home"></div>
+  <div class="dot" data-go="t-projects" data-label="Projects"></div>
+  <div class="dot" data-go="t-hobbies" data-label="Passions"></div>
+  <div class="dot" data-go="t-contact" data-label="Contact"></div>
+</div>
+
+<div id="scroller">
+
+  <!-- ══ SCENE 1: HERO ══ -->
+  <div class="track" id="t-hero">
+    <div class="stage" id="s-hero">
+      <div class="hero-bg" id="hero-bg">
+        <div class="chessboard"></div>
+      </div>
+      <div class="hero-vignette"></div>
+      <div class="neural" id="neural" aria-hidden="true">
+        <svg class="neural-lines" id="neural-lines" viewBox="0 0 100 100" preserveAspectRatio="none"></svg>
+        <div class="neural-nodes" id="neural-nodes"></div>
+      </div>
+      <div class="neural-pop" id="neural-pop"><div class="neural-pop-inner"><img id="neural-pop-img" alt=""></div></div>
+      <div class="hero-inner" id="hero-inner">
+        <div class="hero-text">
+          <p class="eyebrow fade-up">Portfolio — 2026</p>
+          <h1 class="hero-title fade-up">Andrew<br><em>Wang.</em></h1>
+          <p class="hero-sub fade-up">Highschooler with a passion for computer science and electrical engineering — building, breaking, and learning at the intersection of code and circuitry.</p>
+          <a class="cta fade-up" href="#" data-go="t-projects">View my work</a>
+        </div>
+      </div>
+      <div class="hero-stats fade-up" id="hero-stats">
+      <div><div class="sn">03</div><div class="sl">Projects</div></div>
+        <div><div class="sn">2658</div><div class="sl">FRC Team</div></div>
+      </div>
+      <div class="scroll-hint fade-up" id="hero-hint">
+        <span class="sh-txt">Scroll</span>
+        <div class="sh-line"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══ SCENE 2: PROJECTS ══ -->
+  <div class="track" id="t-projects">
+    <div class="stage" id="s-projects">
+      <div class="proj-title-state" id="proj-title">
+        <p class="sec-label">Selected Work</p>
+        <h2 class="sec-title">Things I've <em>built</em>,<br>and what I learned doing it.</h2>
+        <div class="proj-meta">
+          <div><span>03</span> Projects</div>
+          <div><span>2024–2026</span></div>
+        </div>
+      </div>
+      <div class="proj-cards-state" id="proj-cards">
+        <div class="proj-card proj-p1" data-detail="p1">
+          <div class="proj-card-img"></div>
+          <div class="proj-info">
+            <div class="proj-num">/ 01</div>
+            <h3 class="proj-name">YOLOv8 Chess Piece Detection</h3>
+            <div class="proj-type">Computer Vision · 2026</div>
+            <p class="proj-desc">AI image detection model using a personally trained YOLOv8 model to identify, detect, and track chess pieces — designed to replace expensive DGT boards.</p>
+            <div class="proj-cta">Read more</div>
+          </div>
+        </div>
+        <div class="proj-card proj-p2" data-detail="p2">
+          <div class="proj-card-img"></div>
+          <div class="proj-info">
+            <div class="proj-num">/ 02</div>
+            <h3 class="proj-name">Machine Learning Chess Bot</h3>
+            <div class="proj-type">Reinforcement Learning · 2026</div>
+            <p class="proj-desc">An AlphaZero-inspired machine learning bot utilizing MCTS, neural networks, and self-play training.</p>
+            <div class="proj-cta">Read more</div>
+          </div>
+        </div>
+        <div class="proj-card proj-p3" data-detail="p3">
+          <div class="proj-card-img"></div>
+          <div class="proj-info">
+            <div class="proj-num">/ 03</div>
+            <h3 class="proj-name">FRC 2658 — Subsystems</h3>
+            <div class="proj-type">Robotics · Team 2658 · 2025</div>
+            <p class="proj-desc">Helped design and build critical subsystems on FRC Team 2658's district-winning robot — including the intake turret, swerve drive, and indexers.</p>
+            <div class="proj-cta">Read more</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══ SCENE 3: HOBBIES ══ -->
+  <div class="track" id="t-hobbies">
+    <div class="stage" id="s-hobbies">
+      <div class="hobbies-title-state" id="hob-title">
+        <p class="sec-label">Off the Clock</p>
+        <h2 class="sec-title">What I do when <em>nobody's</em><br>handing out grades.</h2>
+        <div class="proj-meta">
+          <div><span>04</span> Passions</div>
+          <div><span>Ongoing</span></div>
+        </div>
+      </div>
+      <div class="hobbies-grid-state" id="hob-grid">
+        <div class="hobby-cell hc-chess" data-detail="chess">
+          <div class="hobby-bg"></div>
+          <div class="hobby-overlay"></div>
+          <span class="hobby-tag">/ 01</span>
+          <div class="hobby-content">
+            <span class="hobby-icon">♞</span>
+            <h3 class="hobby-name">Chess</h3>
+            <p class="hobby-desc">Patterns, calculation, and the occasional brilliancy — chess.com regular, club player.</p>
+            <div class="hobby-cta">Explore</div>
+          </div>
+        </div>
+        <div class="hobby-cell hc-robotics" data-detail="robotics">
+          <div class="hobby-bg"></div>
+          <div class="hobby-overlay"></div>
+          <span class="hobby-tag">/ 02</span>
+          <div class="hobby-content">
+            <span class="hobby-icon">◎</span>
+            <h3 class="hobby-name">Robotics</h3>
+            <p class="hobby-desc">FRC Team 2658 — power distribution, wiring, and motor control. The part of the robot that makes everything else move.</p>
+            <div class="hobby-cta">Explore</div>
+          </div>
+        </div>
+        <div class="hobby-cell hc-future" data-detail="future">
+          <div class="hobby-bg"></div>
+          <div class="hobby-overlay"></div>
+          <span class="hobby-tag">/ 03</span>
+          <div class="hobby-content">
+            <span class="hobby-icon">→</span>
+            <h3 class="hobby-name">What's Next</h3>
+            <p class="hobby-desc">Heading into a Seasats internship this summer and a research role with UCSD's REHS program.</p>
+            <div class="hobby-cta">Explore</div>
+          </div>
+        </div>
+        <div class="hobby-cell hc-coding" data-detail="coding">
+          <div class="hobby-bg"></div>
+          <div class="hobby-overlay"></div>
+          <span class="hobby-tag">/ 04</span>
+          <div class="hobby-content">
+            <span class="hobby-icon">✦</span>
+            <h3 class="hobby-name">Art</h3>
+            <p class="hobby-desc">Acrylic landscapes and the occasional late-night canvas — a quieter kind of problem-solving.</p>
+            <div class="hobby-cta">Explore</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══ SCENE 4: CONTACT ══ -->
+  <div class="track" id="t-contact">
+    <div class="stage contact-stage" id="s-contact">
+      <div class="contact-left" id="contact-left">
+        <div class="contact-ghost">say hello</div>
+        <p class="sec-label">Contact</p>
+        <h2 class="contact-big">Let's <em>build</em><br>something.</h2>
+        <div class="c-links">
+          <a class="c-link" href="mailto:awwg11@gmail.com">awwg11@gmail.com</a>
+          <a class="c-link" href="https://github.com/Komokid">GitHub / Komokid</a>
+        </div>
+        <p class="contact-loc">Based in California · Open to collaboration</p>
+      </div>
+      <div class="contact-right">
+        <span class="contact-mark">AW</span>
+        <div class="contact-right-grad"></div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <span class="fc">© 2026 Andrew Wang. All rights reserved.</span>
+    <span class="fl">A · W</span>
+  </footer>
+
+</div>
+
+<!-- ══ MODAL ══ -->
+<div class="modal-overlay" id="modal">
+  <div class="modal" id="modal-inner">
+    <button class="modal-close" id="modal-close" aria-label="Close">✕</button>
+    <div class="modal-img">
+      <div class="modal-img-inner" id="modal-img-inner"></div>
+      <div class="modal-img-label" id="modal-img-label">[ visual ]</div>
+    </div>
+    <div class="modal-body" id="modal-body"></div>
+  </div>
+</div>
+
+<script src="portfolio.js"></script>
+</body>
+</html>
